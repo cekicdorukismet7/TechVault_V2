@@ -7,7 +7,6 @@ def save_devices():
         json.dump(devices, file, indent=4)
 
 
-# Load saved devices
 try:
     with open("devices.json", "r") as file:
         devices = json.load(file)
@@ -15,7 +14,6 @@ except FileNotFoundError:
     devices = []
 
 
-# Generate the next available ID
 if devices:
     id_counter = max(
         int(device["id"].split("-")[1])
@@ -39,7 +37,6 @@ while choice != "q":
         "Your choice: "
     ).lower().strip()
 
-    # Add a device
     if choice == "a":
         device_name = input("Device name: ").strip()
         brand = input("Brand: ").strip()
@@ -58,7 +55,6 @@ while choice != "q":
 
         print("Device added successfully!")
 
-    # List devices
     elif choice == "l":
         if not devices:
             print("No devices registered yet.")
@@ -70,7 +66,6 @@ while choice != "q":
                 print(f"   Model: {device['model']}")
                 print()
 
-    # Delete a device
     elif choice == "d":
         if not devices:
             print("No devices available to delete.")
@@ -93,7 +88,6 @@ while choice != "q":
             else:
                 print("Device not found!")
 
-    # Search for a device
     elif choice == "s":
         if not devices:
             print("No devices available to search.")
@@ -134,10 +128,8 @@ while choice != "q":
         else:
             print("You type wrong. Please only type y for continue n for back.")
             
-    # Quit the program
     elif choice == "q":
         print("Shutting down TechVault...")
 
-    # Handle invalid choices
     else:
         print("Invalid choice! Please try again.")
