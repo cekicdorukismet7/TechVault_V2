@@ -5,6 +5,13 @@ Hello! I am a 9th-grade Technical High School student specializing in Informatio
 I enjoy building practical projects to improve my programming skills and develop real-world software solutions.
 
 This repository features **TechVault**, a Python-based technical inventory management system with both a Command-Line Interface (CLI) and a Graphical User Interface (GUI). The project supports device management and JSON-based data storage.
+AI-Assisted GUI Development — Transparency Statement
+The graphical user interface (GUI) of TechVault was created with the assistance of artificial intelligence (AI). As a 9th-grade Information Technology student, I am still learning Python programming and have not yet developed the skills required to independently build a complete graphical application of this complexity.
+I used AI to generate the initial GUI implementation, including the application window, visual layout, buttons, input fields, and user interaction elements. I want to be transparent about this because I believe it is important to distinguish between the work I developed independently and the parts created with AI assistance.
+The command-line interface (CLI) and its core inventory management functionality were developed by me as part of my Python learning journey. The GUI version is an opportunity for me to explore how graphical applications work, understand how they differ from command-line programs, and learn new programming concepts by studying the generated code.
+I do not claim that I independently wrote the entire GUI implementation. My goal is to continue learning, gradually understand the code, and eventually become capable of developing similar graphical interfaces independently.
+AI Credit: Made with AI • Built with Python
+
 
 ## Key Features & Software Architecture
 
